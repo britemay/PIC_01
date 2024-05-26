@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - BarCentral</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Administração do Cardápio</h1>
+    </header>
+    <main>
+        <form id="menu-form">
+            <label for="name">Nome do Prato:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="description">Descrição:</label>
+            <textarea id="description" name="description" required></textarea>
+            <label for="price">Preço:</label>
+            <input type="number" id="price" name="price" step="0.01" required>
+            <label for="image">URL da Imagem:</label>
+            <input type="text" id="image" name="image" required>
+            <button type="submit">Adicionar Item</button>
+        </form>
+    </main>
+    <script>
+        document.getElementById('menu-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            fetch('/api/menu', {
+                method: 'POST',
+                body: new URLSearchParams(formData)
+            })
+            .then(response => response.text())
+            .then(result => {
+                alert(result);
+                event.target.reset();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Ocorreu um erro ao adicionar o item.');
+            });
+        });
+    </script>
+</body>
+</html>

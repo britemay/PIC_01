@@ -1,0 +1,204 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarCentral</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+
+    <!--Aqui começa o home-->
+
+    <header class ="max-width bg" id="home">
+        <div class="conteiner">
+            <div class="menu">
+                <div class="logo"></div>
+                <div class="desktop-menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#service">Serviços</a></li>
+                        <li><a href="#menu">Cardápio</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu" onclick="myFuction()">
+                    <i class="fa-solid fa-bars"></i>
+                    <ul id="myLinks">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#service">Serviços</a></li>
+                        <li><a href="#menu">Cardápio</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="call">
+                <div class="left">
+                    <img src="image/1.png" alt="">
+                </div>
+                <div class="right">
+                    <h1 class="color-red text-gd"> Bar Central</h1>
+                    <h2 class="color-cinza-1 text-md"> Venha para o melhor bar!</h2>
+                    <p class="text-pq">Aqui você encontra comida boa e de qualidade. 
+                        Sua experiência é mais que só uma refeição! </p>
+                    <button id="verMenu">Ver Cardápio</button>
+                </div>
+            </div>
+        </div>
+        <button id="back-to-top">^</button>
+    </header>
+
+    <!--Aqui começa o about-->
+
+    <section class="max-width bg" id="about">
+        <div class="conteiner">
+            <div class="call">
+                <div class="left">
+                    <span class="text-title color-blue">Sobre Nós</span>
+                    <h2 class="text-md color-cinza-1">Tradição e qualidade, referência no Grande ABC</h2>
+                    <p>Elegante e popular, o melhor da comida de boteco em um ambiente aconchegante, 
+                        refinado e com preços muito acessíveis, a melhor experiência gastronômica do ABC</p>
+                    <button>Saiba Mais</button>
+                </div>
+                <div class="right">
+                    <img src="image/5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Aqui começa o service-->
+
+    <section class="max-width bg" id="service">
+        <div class="conteiner">
+            <div class="content">
+                <div class="titulo">
+                    <span class="text-title color-blue">Ofertas</span>
+                    <h2 class="text-md color-cinza-1">Nossos Serviços</h2>
+                </div>
+                <div class="down">
+                    <div class="box">
+                        <i class="fa fa-cutlery text-gd color-blue"></i>
+                        <h2>A melhor comida</h2>
+                        <p>Fazendo sua comida com um toque especial</p>
+                    </div>
+                    <div class="box">
+                        <i class="fa-solid fa-pizza-slice text-gd color-blue"></i>
+                        <h2>Comida Rápida</h2>
+                        <p>Atendendo na velocidade da sua fome</p>
+                    </div>
+                    <div class="box">
+                        <i class="fa fa-motorcycle text-gd color-blue"></i>
+                        <h2>Entrega</h2>
+                        <p>Em todo o ABC Paulista e Região de São Paulo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!--Aqui começa o menu-->
+    
+    <section class="max-width bg" id="menu">
+        <div class="conteiner">
+            <div class="content">
+                <div class="titulo">
+                    <span class="text-title color-blue">Prato do Dia</span>
+                    <h2 class="text-md color-cinza-1">Cardápio</h2>
+                </div>
+                <div class="down">
+                    <div class="box">
+                        <img src="image/PRATO01.jpg" alt="">
+                        <h2 class="color-blue">Buffalo Wings</h2>
+                        <p class="text-pq">Asa de frango que geralmente é frita sem ser empanada e depois revestida por ou mergulhada em um molho picante.</p>
+                        <p>R$ 25,90</p>
+                    </div>
+                    <div class="box">
+                        <img src="image/PRATO02.jpg" alt="">
+                        <h2 class="color-blue">Carpaccio Trufado</h2>
+                        <p class="text-pq">Carne bovina fatiada em finíssimas fatias acompanhada por diversos molhos, principalmente mostarda e outros temperos.</p>
+                        <p>R$ 35,90</p>
+                    </div>
+                    <div class="box">
+                        <img src="image/PRATO03.jpg" alt="">
+                        <h2 class="color-blue">Coalhada de Salim</h2>
+                        <p class="text-pq">Combo composto de coalhada seca, kafta em bolinhas e salada de berinjela, servido com pão árabe especial da casa.</p>
+                        <p>R$ 18,90</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cdd-centered">
+        <button>Adicionar prato do dia</button>
+    </div>
+
+
+
+    <!--Aqui começa o contact-->
+    
+        <section class="max-width bg" id="contact">
+            <div class="container">
+                <div class="call">
+                    <div class="left">
+                        <span class="text-title color-blue">App</span>
+                        <h2 class="text-md color-cinza-1">O aplicativo está disponível</h2>
+                        <p> Baixe e faça seu pedido direto do nosso aplicativo!</p>
+                        <div class="info">
+                            <img src="image/apps.png" alt="">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <img src="image/phone.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>     
+        
+    <!--Aqui começa o footer-->
+
+    <footer>
+        <div class="conteiner">
+            <img src="image/logo.png" alt="">
+            <p class="text-pq">Copyright 2024 <span class="color-blue">FRONT</span> All Rights Reserved</p>
+            <p class="text-pq">Tel.: (11) 4125-8089</p>
+        </div>
+    </footer>
+
+    <script>
+
+        //Botão back-to-top
+
+        var btn = document.querySelector("#back-to-top");
+
+        btn.addEventListener("click", function(){
+            window.scrollTo(0,0)
+        })
+
+        
+        var btn = document.querySelector("#verMenu");
+
+        btn.addEventListener("click", function() {
+            document.getElementById("menu").scrollIntoView({ behavior: 'smooth' });
+        });
+
+        //Menu Mobile
+
+        function myFuction(){
+            var x = document.getElementById("myLinks")
+            if (x.style.display === "block"){
+                x.style.display = "none";
+            }else{
+                x.style.display = "block"
+            }
+        }
+
+    </script>
+</body>
+</html>
